@@ -1,0 +1,50 @@
+<html>
+<head>
+
+<title>
+
+this is a testweb page
+
+</title>
+
+</head>
+
+    <body>
+
+<FONT SIZE="7" COLOR="blue">i</font>
+
+<U> 
+<B>
+<FONT COLOR="red" size="5">
+<marquee behavior="scrdl"direction="left"loop="3"bgcolor="#0066CC">
+
+i'm writing my firstbage <p>web page </p> 
+
+ </marquee>
+ </FONT>
+ </B>
+ </U>
+ 
+<A href="https://www.youtube.com/watch?v=pQN-pnXPaVg&t=2236s">شرح يوتيوب اضغط  هنا <img src="reem.jpg"height="300" width="250"border="5" align="bottom"> </A>
+
+
+<table border="5" bgcolor="green" width="600" hieght="600"> <!--> سمك خط الجدول-->
+
+
+<!--اول صف-->
+<tr bgcolor="red" valign="3">
+<td bgcolor="pink" valign="3">name</td>
+<td>age</td>
+</tr>
+<!--تاني صف-->
+<tr bgcolor="yellow" valign="3">
+<td>name>reem</td>
+<td>12</td>
+</tr>
+
+
+</table>
+
+ </body>
+
+</html>

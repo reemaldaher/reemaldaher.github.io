@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="frame">
+        <header class="header">
+            <nav class="navigation">
+                <label for="username"> WELCOME  </label>
+                
+            </nav>
+        </header>
+        <main>
+            <div class="signin-container">
+                <h2>Sign In</h2>
+                <form id="signin-form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                <button type="submit"><a href="index.html" >Sign In</a></button>
+                </form>
+                <p id="error-message"></p>
+            </div>
+        </main>
+        <footer>
+            <!-- Footer content goes here -->
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("signin-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Get input values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the username and password match
+            if (isValidUser(username, password)) {
+                // Successful login, you can redirect or perform other actions here
+                alert("Login successful!");
+            } else {
+                // Display an error message for incorrect login
+                document.getElementById("error-message").textContent = "Incorrect username or password.";
+            }
+        });
+
+        // Function to validate the username and password
+        function isValidUser(username, password) {
+            // You can replace this with your authentication logic
+            // For demonstration, we'll use hardcoded values
+            var validUsername = "user";
+            var validPassword = "password";
+
+            return username === validUsername && password === validPassword;
+        }
+    </script>
+</body>
+</html>

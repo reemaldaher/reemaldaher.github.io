@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1530c8; /* Blue background */
+}
+
+.site-header {
+    background-color: #0d2135; /* Red background for the header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 20px auto;
+    background-color: white; /* Ensures gallery background stands out */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds subtle shadow to gallery for depth */
+}
+
+.car-photo {
+    width: 30%;
+    margin: 15px 0; /* Ensures consistent spacing around each photo */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.car-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.car-photo p {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.car-photo p:first-of-type {
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+    .car-photo {
+        width: 45%; /* Adjusts the photo width for better mobile responsiveness */
+    }
+}
+
+@media (max-width: 480px) {
+    .car-photo {
+        width: 90%; /* Makes each car photo take almost full width on smaller devices */
+    }
+}
